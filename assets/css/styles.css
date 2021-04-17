@@ -146,11 +146,10 @@ html{
     font-size: 14px;
 }
 
-#slider{
+#pic{
     position: relative;
     margin-top: 46px;
     padding-top:50%;
-    background: url('/img/slider/89317.png') top center / cover no-repeat;
 }
 
 #slider .text-content{
