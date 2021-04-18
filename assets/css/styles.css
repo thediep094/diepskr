@@ -7,7 +7,6 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
-
  /* Same */
  .btn{
     padding: 11px 13px;
@@ -17,6 +16,7 @@ html{
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
 }
 .pull-right{
     float:right;
@@ -116,11 +116,20 @@ html{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     min-width: 160px;
 }
+#header .menu-mobile-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 
+#header .menu-mobile-btn,
 #header .search-btn{
     float: right;
 }
 
+
+#header .menu-icon,
 #header .search-icon{
     color: white;
     font-size: 20px;
@@ -131,6 +140,13 @@ html{
 
 #header .search-btn:hover {
     background-color: red;
+}
+#header .menu-mobile-btn:hover{
+    background-color: #ccc;
+}
+
+#header .menu-mobile-btn:hover .menu-icon{
+    color: black;
 }
 #nav .subnav a{
     color:black;
@@ -146,10 +162,11 @@ html{
     font-size: 14px;
 }
 
-#pic{
+#slider {
     position: relative;
     margin-top: 46px;
-    padding-top:50%;
+    padding-top: 50%;
+    background: url(/img/slider/Dispersion.png) top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -162,15 +179,14 @@ html{
 }
 
 #slider .text-heading{
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 700;
-    margin:10px;
-    margin-left: 120px;
+    text-align: center;
 }
 
 #slider .text-discreption{ 
-    font-size: 45px;
-    margin:15px;
+    font-size: 15px;
+    text-align: center;
 }
 
 
@@ -181,6 +197,9 @@ html{
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
 }
 
 #content .section-heading{
@@ -208,7 +227,7 @@ html{
 }
 
 #content .member-list{
-    margin-top: 48px;
+    margin-top: 32px;
     overflow: hidden;
 }
 #content .member-item{
